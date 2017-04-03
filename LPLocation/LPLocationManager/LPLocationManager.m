@@ -13,7 +13,6 @@
 @interface LPLocationManager ()<CLLocationManagerDelegate>
 
 @property (nonatomic, assign) UIBackgroundTaskIdentifier taskIdentifier;
-@property (nonatomic, strong) CLLocation *oldLocation;
 
 @end
 
@@ -57,16 +56,9 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     CLLocation *location = locations[0];
-    if (self.oldLocation == nil) {
-        self.oldLocation = location;
-    }
     NSLog(@"%@",location);
     [self adjustDistanceFilter:location];
-    CLLocationDistance distance = [location distanceFromLocation:_oldLocation];
-    if (distance > 50) {
-      [self uploadLocation:location];
-        self.oldLocation = location;
-    }
+    [self uploadLocation:location];
 
 }
 
