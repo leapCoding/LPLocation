@@ -13,6 +13,10 @@
 		0C4409A71E90856F00B187C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4409A51E90856F00B187C8 /* Main.storyboard */; };
 		0C4409A91E90856F00B187C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4409A81E90856F00B187C8 /* Assets.xcassets */; };
 		0C4409AC1E90856F00B187C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4409AA1E90856F00B187C8 /* LaunchScreen.storyboard */; };
+		0C4409B61E90861600B187C8 /* LPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4409B51E90861600B187C8 /* LPLocationManager.m */; };
+		0C4409B91E90863200B187C8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4409B81E90863200B187C8 /* CoreLocation.framework */; };
+		0C440AF01E90F1CD00B187C8 /* LPLoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C440AEF1E90F1CD00B187C8 /* LPLoc.m */; };
+		6F780FADE08DFE9C43AB9975 /* libPods-LPLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1C562C2E8E36ABF89F7041 /* libPods-LPLocation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		0C4409A81E90856F00B187C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C4409AB1E90856F00B187C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C4409AD1E90856F00B187C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C4409B41E90861600B187C8 /* LPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLocationManager.h; sourceTree = "<group>"; };
+		0C4409B51E90861600B187C8 /* LPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLocationManager.m; sourceTree = "<group>"; };
+		0C4409B81E90863200B187C8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0C440AEE1E90F1CD00B187C8 /* LPLoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLoc.h; sourceTree = "<group>"; };
+		0C440AEF1E90F1CD00B187C8 /* LPLoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLoc.m; sourceTree = "<group>"; };
+		7A1C562C2E8E36ABF89F7041 /* libPods-LPLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LPLocation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3863A630F03C164D0F379D3 /* Pods-LPLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPLocation.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPLocation/Pods-LPLocation.release.xcconfig"; sourceTree = "<group>"; };
+		FC1F009D8FB04FA936377F8A /* Pods-LPLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPLocation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPLocation/Pods-LPLocation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4409B91E90863200B187C8 /* CoreLocation.framework in Frameworks */,
+				6F780FADE08DFE9C43AB9975 /* libPods-LPLocation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +58,8 @@
 			children = (
 				0C44099B1E90856F00B187C8 /* LPLocation */,
 				0C44099A1E90856F00B187C8 /* Products */,
+				0C4409B71E90863200B187C8 /* Frameworks */,
+				564A04EDA7418277FF142F6C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +74,12 @@
 		0C44099B1E90856F00B187C8 /* LPLocation */ = {
 			isa = PBXGroup;
 			children = (
+				0C4409B31E9085D000B187C8 /* LPLocationManager */,
 				0C44099F1E90856F00B187C8 /* AppDelegate.h */,
 				0C4409A01E90856F00B187C8 /* AppDelegate.m */,
 				0C4409A21E90856F00B187C8 /* ViewController.h */,
+				0C440AEE1E90F1CD00B187C8 /* LPLoc.h */,
+				0C440AEF1E90F1CD00B187C8 /* LPLoc.m */,
 				0C4409A31E90856F00B187C8 /* ViewController.m */,
 				0C4409A51E90856F00B187C8 /* Main.storyboard */,
 				0C4409A81E90856F00B187C8 /* Assets.xcassets */,
@@ -79,6 +98,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0C4409B31E9085D000B187C8 /* LPLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				0C4409B41E90861600B187C8 /* LPLocationManager.h */,
+				0C4409B51E90861600B187C8 /* LPLocationManager.m */,
+			);
+			path = LPLocationManager;
+			sourceTree = "<group>";
+		};
+		0C4409B71E90863200B187C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C4409B81E90863200B187C8 /* CoreLocation.framework */,
+				7A1C562C2E8E36ABF89F7041 /* libPods-LPLocation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		564A04EDA7418277FF142F6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC1F009D8FB04FA936377F8A /* Pods-LPLocation.debug.xcconfig */,
+				D3863A630F03C164D0F379D3 /* Pods-LPLocation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C4409B01E90856F00B187C8 /* Build configuration list for PBXNativeTarget "LPLocation" */;
 			buildPhases = (
+				8AD2F29CCD50534707820FA5 /* [CP] Check Pods Manifest.lock */,
 				0C4409951E90856F00B187C8 /* Sources */,
 				0C4409961E90856F00B187C8 /* Frameworks */,
 				0C4409971E90856F00B187C8 /* Resources */,
+				9749E01DC98F1F228593E1F0 /* [CP] Embed Pods Frameworks */,
+				B52BB4FF3E5CF11638F9810D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,7 +159,13 @@
 				TargetAttributes = {
 					0C4409981E90856F00B187C8 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = VW6B7929D2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -145,13 +200,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8AD2F29CCD50534707820FA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9749E01DC98F1F228593E1F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPLocation/Pods-LPLocation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B52BB4FF3E5CF11638F9810D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPLocation/Pods-LPLocation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C4409951E90856F00B187C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C440AF01E90F1CD00B187C8 /* LPLoc.m in Sources */,
 				0C4409A41E90856F00B187C8 /* ViewController.m in Sources */,
 				0C4409A11E90856F00B187C8 /* AppDelegate.m in Sources */,
+				0C4409B61E90861600B187C8 /* LPLocationManager.m in Sources */,
 				0C44099E1E90856F00B187C8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +377,10 @@
 		};
 		0C4409B11E90856F00B187C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1F009D8FB04FA936377F8A /* Pods-LPLocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VW6B7929D2;
 				INFOPLIST_FILE = LPLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LPDev.LPLocation;
@@ -283,8 +390,10 @@
 		};
 		0C4409B21E90856F00B187C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3863A630F03C164D0F379D3 /* Pods-LPLocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VW6B7929D2;
 				INFOPLIST_FILE = LPLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LPDev.LPLocation;
@@ -311,6 +420,7 @@
 				0C4409B21E90856F00B187C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
